@@ -22,8 +22,8 @@ public class ObjectDetection {
 		RequestBody fileBody = RequestBody.create(MediaType.parse(mimeType), file);
 
 
-		//Replace API_KEY with the API Key for your Watson VR service instance 
-		String usernamePassword = "apikey:w7lM4t9gpyF-cWY33ygJFEKbjFHk8RKuNuTrkB84P6q6";
+		//Replace <API_KEY> with the API Key for your Watson VR service instance 
+		String usernamePassword = "apikey:<API_KEY>";
 		String basicAuthPayload = "Basic " + Base64.getEncoder().encodeToString(usernamePassword.getBytes());
 
 		//Replace with your collection id
